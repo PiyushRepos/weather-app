@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather__app">
+        <div class="inp__Container">
+          <input
+            type="text"
+            placeholder="Enter city name"
+            autofocus
+            class="search__inp"
+            id="search__inp"
+          />
+          <img
+            src="./images/search.png"
+            alt="search icon"
+            class="submit__btn"
+            id="submit__btn"
+          />
+        </div>
+        <div class="weather__info-container">
+          <div class="top">
+            <img
+              src="./images/clouds.png"
+              alt=""
+              id="weather__img"
+              class="weather__img"
+            />
+            <h4 class="weather__celcius" id="weather__celcius">1°C</h4>
+            <h3 class="city" id="city">Berlin</h3>
+          </div>
+          <div class="bottom">
+            <div class="humidity">
+              <img
+                src="./images/humidity.png"
+                alt="Humidity image"
+                class="humidity__img img"
+              />
+              <div>
+                <div class="humidity_percentage" id="humidity_percentage">
+                  90%
+                </div>
+                <div class="humidity_title" id="humidity_title">Humidity</div>
+              </div>
+            </div>
+            <div class="wind__speed">
+              <img
+                src="./images/wind.png"
+                alt="Humidity image"
+                class="wind__speed-img"
+              />
+              <div>
+                <div class="wind__speed-speed" id="wind__speed-speed">
+                  2.68 km/h
+                </div>
+                <div class="wind__speed-title" id="wind__speed-title">
+                  Wind Speed
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
